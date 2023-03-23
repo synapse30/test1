@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* 共通部分 -------------- */
+html{
+    font-size: 100%;
+}
+body{
+    font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;line-height: 1.7;
+    color:#432;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* HEADER -------------- */
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 13px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color:#432;
+}
+.main-nav a:hover{
+    color:#0bd;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/* HOME -------------- */
+.home-content{
+    text-align: center;
+    margin-top: 1%;
+}
+
+
+/* slide-show -------------- */
+div.slide-show {
+    width: 640px; /* スライドショーの幅 */
+    max-width: 100%; /* スマホで表示が欠けないように */
+    margin: 10px auto; /* 中央揃え */
+    position: relative;
+}
+     
+.slide-show img {
+    animation: show 12s infinite; /* 12秒のスライドショーを繰り返し */
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute; /* 画像を重ねて表示 */
+    left: 0;
+    top: 0;
+}
+     
+@keyframes show {
+    0% {opacity: 0}
+    17% {opacity: 1}
+    33% {opacity: 1}
+    50% {opacity: 0}
+}
+     
+.slide-show img:nth-of-type(1) {
+    position: relative;
+}
+     
+.slide-show img:nth-of-type(2) {
+    animation-delay: 0s;
+}
+     
+.slide-show img:nth-of-type(3) {
+    animation-delay: 4s;
+}
+     
+.slide-show img:nth-of-type(4) {
+    animation-delay: 8s;
+}
+
+/* PLAY -------------- */
+.play-content{
+    text-align: center;
+    margin-top: 1%;
+}
+
+/* button_line001 -------------- */
+.button_line001 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+.button_line001 a:before {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgba(0,0,0,.1);
+    transform: translateX(-50%);
+}
+.button_line001 a:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.button_line001 a:hover {
+    opacity: 0.7;
+}
+.button_line001 a:hover:after {
+    transform: scale(1, 1);
+}
+/* button_line002 -------------- */
+.button_line002 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+.button_line002 a:before {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgba(0,0,0,.1);
+    transform: translateX(-50%);
+}
+.button_line002 a:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.button_line002 a:hover {
+    opacity: 0.7;
+}
+.button_line002 a:hover:after {
+    transform: scale(1, 1);
+}
+/* button_line003 -------------- */
+.button_line003 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+}
+.button_line003 a:before {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgba(0,0,0,.1);
+    transform: translateX(-50%);
+}
+.button_line003 a:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+.button_line003 a:hover {
+    opacity: 0.7;
+}
+.button_line003 a:hover:after {
+    transform: scale(1, 1);
+}
+
+/* detail -------------- */
+.detail {
+    width: 640px; /* スライドショーの幅 */
+    max-width: 100%; /* スマホで表示が欠けないように */
+    margin: 10px auto; /* 中央揃え */
+    position: relative;
+    text-align: center;
+    margin-top: 1%;
+}
+
